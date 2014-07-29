@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"   />
+    <title>三列布局</title>
+    <link href="../css/reset.css"  rel="stylesheet" >
+</head>
+<style type="text/css">
+    /*.wrap{width: 960px;height: 500px;margin: 0 auto;position: relative;}*/
+    .wrap{width: 100%;;height: 500px;margin: 0 auto;position: relative;}
+    .wrap .A{width: 180px;height: 500px;background: #059ed3;}
+    .wrap .B{height: 500px;background: #ccc;}
+    .wrap .C{width: 180px;height: 500px;background: #ffffc0;}
+    /*ABC*/
+    /*.A,.B,.C{float: left;}*/
+    /*BAC*/
+    /*.B{position: absolute;left: 0px;}*/
+    /*.A{position: absolute;right: 180px;}*/
+    /*.C{position: absolute;right: 0px;}*/
+    /*CBA*/
+    .C{position: absolute;left: 0px;top: 0px;}
+    .A{position: absolute;right: 0px;top: 0px;}
+    .B{margin: 0 180px;}
+</style>
+<body>
+<!--<button>1</button>-->
+<!--<button>2</button>-->
+<!--<button>3</button>-->
+<div class="wrap">
+    <div class="A">
+        A
+    </div>
+    <div class="B">
+        B
+    </div>
+    <div class="C">
+        C
+    </div>
+</div>
+</body>
+</html>
